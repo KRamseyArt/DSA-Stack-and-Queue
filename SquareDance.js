@@ -6,9 +6,9 @@ class SquareDance {
     this.females = new _Queue();
   }
 
-  pairOff(string){
-    const gender = string[0];
-    const name = string.split(' ')[1];
+  squareDance(arr){
+    const gender = arr[0][0];
+    const name = arr.split(' ')[1];
 
     if (gender === 'F'){
       this.females.enqueue(name);
